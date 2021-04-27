@@ -105,11 +105,6 @@ const ThoughtController = {
         res.json(dbThoughtData);
       })
       .catch(err => res.json(err));
-    console.log(params.thoughtId);
-    console.log(body);
-
-
-    res.json('okay')
   },
 
   // remove reaction
@@ -121,10 +116,10 @@ const ThoughtController = {
     )
       .then(dbThoughtData => {
         if (!dbThoughtData) {
-          res.status(404).json({ message: 'No reaction found with this id!' });
+          res.status(404).json({ message: 'No thought/reaction found with this id!' });
           return;
         }
-        res.json(dbThoughtData);
+      res.json(dbThoughtData)
       })
       .catch(err => res.json(err));
   }
