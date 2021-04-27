@@ -29,7 +29,7 @@ The project runs using the `npm start` script, allowing access to the API routes
 
 You can find the video walkthrough link and the repository link below:
 
-Video Walkthrough Link: [Video Walkthrough]()
+Video Walkthrough Link: [Video Walkthrough](https://drive.google.com/file/d/1L-IkFYS64GwMrR9e3hZvNhBa6FRyeQSR/view?usp=sharing)
 
 Repo Link: [Repo Link](https://github.com/cerafinn/social-network-api)
 
@@ -37,8 +37,9 @@ Repo Link: [Repo Link](https://github.com/cerafinn/social-network-api)
 
 ## Screenshots
 
-[Code screenshot]()
-[Insomnia screenshot]()
+![Code screenshot](/assets/images/code-social-network-api.PNG)
+
+![Insomnia screenshot](/assets/images/insomnia-social-network-api.PNG)
 
 <br />
 
