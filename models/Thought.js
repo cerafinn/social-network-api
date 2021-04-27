@@ -10,6 +10,7 @@ const ReactionSchema = new Schema(
     reactionBody: {
       type: String,
       required: true,
+      trim: true,
       maxLength: 280
     },
     username: {
@@ -20,14 +21,14 @@ const ReactionSchema = new Schema(
       type: Date,
       default: Date.now,
       get: (createdAtVal) => moment(createdAtVal).format('MMMM Do YYYY, h:mm:ss a')
-    },
+    }
   },
   {
     toJSON: {
       getters: true
     }
   }
-);
+)
 
 const ThoughtSchema = new Schema(
   {
