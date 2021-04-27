@@ -9,7 +9,9 @@ const ThoughtController = {
         select: '-__v'
       })
       .select('-__v')
-    .then(dbThoughtData => res.json(dbThoughtData))
+    .then(dbThoughtData => {
+      console.log(dbThoughtData)
+      res.json(dbThoughtData)})
     .catch(err => {
         console.log(err);
         res.sendStatus(400);
@@ -103,6 +105,11 @@ const ThoughtController = {
         res.json(dbThoughtData);
       })
       .catch(err => res.json(err));
+    console.log(params.thoughtId);
+    console.log(body);
+
+
+    res.json('okay')
   },
 
   // remove reaction

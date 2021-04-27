@@ -1,4 +1,4 @@
-const { Schema, model } = require('mongoose');
+const { Schema, model, Types } = require('mongoose');
 const moment = require('moment');
 
 const ReactionSchema = new Schema(
@@ -28,7 +28,7 @@ const ReactionSchema = new Schema(
       getters: true
     }
   }
-)
+);
 
 const ThoughtSchema = new Schema(
   {
